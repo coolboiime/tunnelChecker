@@ -1,9 +1,7 @@
 tunnelChecker
 ==============
 
-This is a script in direct response to [Kristian Haugene's Transmission script](https://github.com/haugene/docker-transmission-openvpn). The script itself tries to match the IP addresses locally and remotely in addition to checking if a defined port is open.
-
-If either or fails the check, the script will kill the OpenVPN process, which shuts down the Docker container.
+This is a script in direct response to [Kristian Haugene's Transmission script](https://github.com/haugene/docker-transmission-openvpn). The script itself tries to match the IP addresses locally and remotely in addition to checking if a defined port is open. If either or fails the check, the script will kill the OpenVPN process, which shuts down the Docker container.
 
 __In other words, this fixes an bug with `docker-transmission-openvpn`__
 
