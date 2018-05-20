@@ -24,7 +24,7 @@ echo "Network Port is "$VPN_PORT
 
 if [ "$VPN_ADDR" != "$VPN_RESP" ] || [ "$VPN_PORT" == "closed" ]; then
     echo "Killing OpenVPN"
-	killall -SIGINT openvpn
+	pkill -SIGINT openvpn
 else
 	echo "VPN is already working!"
 fi
