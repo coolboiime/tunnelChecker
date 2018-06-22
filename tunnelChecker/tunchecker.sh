@@ -6,12 +6,10 @@ IP_CHECK=http://ipinfo.io/ip
 PORT_FORWARD=
 
 # Script Starts
-if ! [ -x "$(command -v nmap)" ]; then
+if [ ! -x "$(command -v nmap)" ] && [ "$PORT_FORWARD" != "" ]; then
 	echo "Installing nmap ..."
 	apt-get -qq update
 	apt-get -qq install nmap
-else
-	echo "nmap already exists ..."
 fi
 
 VPN_ADDR=`ip -4 addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'`
@@ -22,7 +20,7 @@ echo "Interface IP is "$VPN_ADDR
 echo "API Query IP is "$VPN_RESP
 echo "Network Port is "$VPN_PORT
 
-if [ "$VPN_ADDR" != "$VPN_RESP" ] || [ "$VPN_PORT" == "closed" ]; then
+if [ "$VPN_ADDR" != "$VPN_RESP" ] || [ "$VPN_PORT" = "closed" ]; then
     echo "Killing OpenVPN"
 	pkill -SIGINT openvpn
 else
