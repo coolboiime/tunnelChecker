@@ -33,4 +33,4 @@ If you want to automate the script, you can use the Task Scheduler application p
 
 This script is purely useful for checking if the Docker tunnel connection is working properly, and kills OpenVPN if it doesn't. Here is one scenario where I would use it:
 
-* Run __/volume1/tunchecker_helper.sh repair__ every 1 or 5 minutes.
+* Run __/volume1/tunchecker_helper.sh__ every 1 or 5 minutes.
