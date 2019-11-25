@@ -26,7 +26,7 @@ These are the descriptions of the variables that may be changed depending on you
 ## Scenario
 Since the Docker container and the host cannot necessarily communicate through the shell, the helper file runs the `docker exec` command to launch the script located inside the Transmission home folder.
 
-Additionally, if `nmap` does not exist, which is usually the case for new script users, the script will quietly install it for the script to run properly.
+Additionally, if `nc` does not exist, which is usually the case for new script users, the script will quietly install it for the script to run properly.
 
 ## Task Scheduling
 If you want to automate the script, you can use the Task Scheduler application provided inside the DiskStation Manager. Make sure the script is ran under root to prevent any issues occurring.
