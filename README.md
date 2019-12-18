@@ -4,7 +4,7 @@ tunnelChecker
 [![GitHub Issues](https://img.shields.io/github/issues/mrjackyliang/tunnelChecker?style=flat-square&color=blue)](https://github.com/mrjackyliang/tunnelChecker/issues)
 [![GitHub Top Languages](https://img.shields.io/github/languages/top/mrjackyliang/tunnelChecker?style=flat-square&color=success)](https://github.com/mrjackyliang/tunnelChecker)
 [![GitHub License](https://img.shields.io/github/license/mrjackyliang/tunnelChecker?style=flat-square&color=orange)](https://github.com/mrjackyliang/tunnelChecker/blob/master/LICENSE)
-[![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat-square&color=red)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8E5CY7SX6S78Q&source=url)
+[![Become a Patreon](https://img.shields.io/badge/donate-patreon-orange?style=flat-square&color=red)](https://www.patreon.com/mrjackyliang)
 
 This is a script in direct response to [Kristian Haugene's Transmission script](https://github.com/haugene/docker-transmission-openvpn). The script itself tries to match the IP addresses locally and remotely in addition to checking if a defined port is open. If either or fails the check, the script will kill the OpenVPN process, which shuts down the Docker container.
 
