@@ -1,38 +1,23 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+about: Found an issue? Report the problem here.
+title: 'DESCRIBE THE BUG HERE AS SYSTEMATICALLY AS POSSIBLE'
+labels: 'bug'
 assignees: ''
 
 ---
+### Describe the bug:
+What do you think the problem relates to?
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+### Steps to reproduce the bug:
+1. 
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
+### Expected behavior:
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+### Logs related to this bug:
+Run the script directly inside SSH. Copy the output then replace `SAMPLE TEXT` inside the grave accents:
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+```sh
+SAMPLE TEXT
+```
