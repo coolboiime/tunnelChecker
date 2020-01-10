@@ -11,7 +11,7 @@ This is a script in direct response to [Kristian Haugene's Transmission script](
 __In other words, this fixes a bug with `docker-transmission-openvpn`__.
 
 ## Retrieve Variables
-These are the descriptions of the variables that may be changed depending on your configuration. Examples are located inside the script. Please follow the exact format unless you know what you're doing. __If you need help, feel free to open an issue on GitHub!__
+These are the descriptions of the variables that may be changed depending on your configuration. Examples are located inside the script. Please follow the exact format unless you know what you're doing. __If you need help, feel free to [open an issue](https://github.com/mrjackyliang/transmissionVPN/issues/new/choose) on GitHub!__
 
 ##### Settings (Main Script)
 1. __IP_CHECK__ - Which URL to use to check your external IP address (default is http://ipinfo.io/ip)
@@ -29,7 +29,7 @@ These are the descriptions of the variables that may be changed depending on you
 3. Use a task scheduler to run the helper script.
 
 ## Scenario
-Since the Docker container and the host cannot necessarily communicate through the shell, the helper file runs the `docker exec` command to launch the script located inside the Transmission home folder.
+Since the Docker container and the host cannot cross-communicate through the shell, the helper file runs the `docker exec` command to launch the script located inside the Transmission home folder.
 
 Additionally, if `nc` does not exist, which is usually the case for new script users, the script will quietly install it for the script to run properly.
 
