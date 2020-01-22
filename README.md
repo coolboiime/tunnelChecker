@@ -9,7 +9,7 @@ tunnelChecker
 
 This is a script in direct response to [Kristian Haugene's Transmission script](https://github.com/haugene/docker-transmission-openvpn). The script itself tries to match the IP addresses locally and remotely in addition to checking if a defined port is open. If either or fails the check, the script will kill the OpenVPN process, which shuts down the Docker container.
 
-__In other words, this fixes a bug with `docker-transmission-openvpn`__.
+__In other words, this fixes an internet check bug with `docker-transmission-openvpn`__.
 
 ## Retrieve Variables
 These are the descriptions of the variables that may be changed depending on your configuration. Examples are located inside the script. Please follow the exact format unless you know what you're doing. __If you need help, feel free to [open an issue](https://github.com/mrjackyliang/transmissionVPN/issues/new/choose) on GitHub!__
@@ -37,6 +37,6 @@ Additionally, if `nc` does not exist, which is usually the case for new script u
 ## Task Scheduling
 If you want to automate the script, you can use the Task Scheduler application provided inside the DiskStation Manager. Make sure the script is ran under root to prevent any issues occurring.
 
-This script is purely useful for checking if the Docker tunnel connection is working properly, and kills OpenVPN if it doesn't. Here is one scenario where I would use it:
+This script is useful for checking if the Docker tunnel connection is working properly, and kills OpenVPN if it doesn't. Here is one scenario where I would use it:
 
 * Run __/volume1/tunchecker_helper.sh__ every 1 or 5 minutes.
