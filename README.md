@@ -14,11 +14,11 @@ __In other words, this fixes an internet check bug with `docker-transmission-ope
 ## Retrieve Variables
 These are the descriptions of the variables that may be changed depending on your configuration. Examples are located inside the script. Please follow the exact format unless you know what you're doing. __If you need help, feel free to [open an issue](https://github.com/mrjackyliang/transmissionVPN/issues/new/choose) on GitHub!__
 
-##### Settings (Main Script)
+##### Settings (`tunchecker.sh`)
 1. __IP_CHECK__ - Which URL to use to check your external IP address (default is http://ipinfo.io/ip)
 2. __PORT_FORWARD__ - Carries an additional port forwarding check (default is empty, 51413 for Transmission default)
 
-##### Settings (Helper Script)
+##### Settings (`tunchecker_helper.sh`)
 1. __CONTAINER_NAME__ - The container name that the script is being ran on (default is transmission-openvpn)
 2. __TUNCHECKER__ - The script location inside the Docker container (default is /data/transmission-home/tunchecker.sh)
 
