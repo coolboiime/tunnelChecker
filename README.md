@@ -11,6 +11,11 @@ This is a script in direct response to [Kristian Haugene's Transmission script](
 
 __In other words, this fixes an internet check bug with `docker-transmission-openvpn`__.
 
+To use this script, here are the steps you need to follow:
+1. Set the variables for the scripts
+2. Move the scripts into their [working directories](#working-directories)
+3. Use a task scheduler to run the helper
+
 ## Retrieve Variables
 These are the descriptions of the variables that may be changed depending on your configuration. Examples are located inside the script. Please follow the exact format unless you know what you're doing. __If you need help, feel free to [open an issue](https://github.com/mrjackyliang/transmissionVPN/issues/new/choose) on GitHub!__
 
@@ -22,12 +27,9 @@ These are the descriptions of the variables that may be changed depending on you
 1. __CONTAINER_NAME__ - The container name that the script is being ran on (default is transmission-openvpn)
 2. __TUNCHECKER__ - The script location inside the Docker container (default is /data/transmission-home/tunchecker.sh)
 
-## How to Use
-1. Set the variables for the main and helper scripts.
-2. Move the two files:
-	- `tunchecker_helper.sh` - This file can exist anywhere accessible.
-	- `tunchecker.sh` - This file should exist inside the Transmission home folder.
-3. Use a task scheduler to run the helper script.
+## Working Directories
+- `tunchecker_helper.sh` - This file can exist anywhere accessible.
+- `tunchecker.sh` - This file should exist inside the Transmission home folder.
 
 ## Scenario
 Since the Docker container and the host cannot cross-communicate through the shell, the helper file runs the `docker exec` command to launch the script located inside the Transmission home folder.
