@@ -28,8 +28,8 @@ These are the descriptions of the variables that may be changed depending on you
 2. __TUNCHECKER__ - The script location inside the Docker container (default is /data/transmission-home/tunchecker.sh)
 
 ## Working Directories
-- `tunchecker_helper.sh` - This file can exist anywhere accessible.
-- `tunchecker.sh` - This file should exist inside the Transmission home folder.
+- `tunchecker_helper.sh` - This file can exist anywhere accessible
+- `tunchecker.sh` - This file should exist inside the Transmission home folder
 
 ## Scenario
 Since the Docker container and the host cannot cross-communicate through the shell, the helper file runs the `docker exec` command to launch the script located inside the Transmission home folder.
