@@ -1,5 +1,5 @@
-# tunnelChecker
-# ==============
+# Tunnel Checker
+# ===============
 
 # Settings
 IP_CHECK=http://ipinfo.io/ip
